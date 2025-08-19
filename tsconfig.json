@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
     "target": "ES2021",
-    "lib": ["dom", "ES2021"],
+    "lib": [
+      "dom",
+      "ES2021"
+    ],
     "module": "esnext",
     "moduleResolution": "bundler",
     "strict": false,
@@ -12,9 +15,20 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
-    }
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "noEmit": true,
+    "incremental": true,
+    "isolatedModules": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
